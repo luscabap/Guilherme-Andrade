@@ -24,7 +24,7 @@ export const Header = () => {
 
   return (
     <header
-      className={`${ menuIsOpen ? "bg-colorPrimary" : "bg-colorTerciary" } flex items-center justify-between px-2 fixed w-full`}
+      className={`${ menuIsOpen ? "bg-colorPrimary" : "bg-colorTerciary" } flex items-center justify-between px-2 fixed w-full z-50`}
     >
       {menuIsOpen 
       ? ( <IoMdClose {...iconProps} onClick={toggleMenu} />) 

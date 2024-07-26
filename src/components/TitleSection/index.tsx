@@ -4,7 +4,7 @@ type TitleSectionProps = {
 
 export const TitleSection= ({ texto }: TitleSectionProps) => {
   return (
-    <h2 className="bg-colorContrast">
+    <h2 className="hover:underline inline-block transition-all text-2xl">
       {texto}
     </h2>
   )

@@ -9,14 +9,17 @@ const iconProps = {
 
 export const HomeContent = () => {
   return (
-    <div id="homeContent" className="flex flex-col items-center justify-center gap-4">
+    <div id="homeContent" className="flex flex-col items-center justify-center gap-4 my-4">
       <h1 className="text-xl text-center">Olá, sou o <strong>Dr. Guilherme Menezes de Andrade</strong></h1>
-      <h2 className="text-xl">O N° da minha OAB é: 510.723</h2>
-      <Image 
-        src={guilherme}
-        alt="Foto do Dr. Guilherme Andrade"
-        className="rounded-xl w-4/5"
-      />
+      <h2 className="text-lg ">OAB N°: 510.723</h2>
+      <div className="flex flex-col items-center justify-center">
+        <Image 
+          src={guilherme}
+          alt="Foto do Dr. Guilherme Andrade"
+          className="rounded-xl w-4/5"
+        />
+        <blockquote className="text-center text-base italic" cite="https://pt.wikipedia.org/wiki/Sobral_Pinto">“A advocacia não é profissão de covardes” <br />- Sobral Pinto</blockquote>
+      </div>
       <InfoButton 
         data="guilherme.oabsv@gmail.com" 
         dataToClipboard="guilherme.oabsv@gmail.com" 
