@@ -21,6 +21,7 @@ const config: Config = {
         "colorDark": "var(--colorDark)",
         "colorLight": "var(--colorLight)",
         "colorBackground": "var(--colorBackground)",
+        "colorFont": "var(--colorFont)",
       }
     },
   },

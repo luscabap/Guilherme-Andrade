@@ -9,7 +9,7 @@ export default function Home() {
   const { themeOperator, toggleTheme } = useThemeContext();
   return (
     <>
-      <div className={`${themeOperator} text-colorDark`}>
+      <div className={`${themeOperator} text-colorFont bg-colorBackground`}>
         <Header />
         <div className="pt-[140px] px-4">
           <HomeContent />

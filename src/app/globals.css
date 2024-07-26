@@ -10,6 +10,7 @@
   --colorDark: #00060D;
   --colorLight: #FEFEFE;
   --colorBackground: #4D5159;
+  --colorFont: #FEFEFE;
 }
 
 .light {
@@ -20,6 +21,7 @@
   --colorDark: #00060D;
   --colorLight: #FEFEFE;
   --colorBackground: #FEFEFE;
+  --colorFont: #0E0E0E;
 }
 
 @layer utilities {
@@ -30,6 +32,6 @@
 
 @layer base {
   * {
-    @apply transition-colors duration-500 ease-in-out;
+    @apply transition-colors duration-300 ease-in-out;
   }
 }
