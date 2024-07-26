@@ -5,21 +5,22 @@ import { createContext } from "react"
 
 type ThemeContextProps = {
   themeOperator: "dark" | "light",
-  toggleTheme: () => void
+  toggleTheme: () => void,
+  darkTheme: boolean
 }
 export const ThemeContext = createContext({} as ThemeContextProps);
 
 export default function Home() {
-  const [theme, setTheme] = useState(true);
+  const [darkTheme, setTheme] = useState(true);
 
   const toggleTheme = () => {
     setTheme(prevValue => !prevValue);
   }
 
-  const themeOperator = theme ? "dark" : "light"
+  const themeOperator = darkTheme ? "dark" : "light"
 
   return (
-    <ThemeContext.Provider value={{ themeOperator, toggleTheme }}>
+    <ThemeContext.Provider value={{ themeOperator, toggleTheme, darkTheme }}>
       <HomePage />
     </ThemeContext.Provider>
   );

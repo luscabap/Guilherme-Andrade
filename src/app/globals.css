@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .dark {
-  --colorPrimary: #0d3a75;
+  --colorPrimary: #082f63;
   --colorSecondary: #394148;
   --colorTerciary: #001830;
   --colorContrast: #f3bf45;
@@ -13,9 +13,9 @@
 }
 
 .light {
-  --colorPrimary: #2e53d6;
-  --colorSecondary: #22425f;
-  --colorTerciary: #00162c;
+  --colorPrimary: #90b7ff;
+  --colorSecondary: #3970a4;
+  --colorTerciary: #0553a1;
   --colorContrast: #ffea80;
   --colorDark: #00060D;
   --colorLight: #FEFEFE;
