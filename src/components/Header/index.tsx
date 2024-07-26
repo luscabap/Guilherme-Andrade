@@ -7,6 +7,7 @@ import { TiThMenuOutline } from "react-icons/ti";
 import { Logo } from "../Logo";
 import { Menu } from "../Menu";
 import { useThemeContext } from "@/hooks/useThemeContext";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const Header = () => {
   const { darkTheme, toggleTheme } = useThemeContext();
@@ -22,16 +23,25 @@ export const Header = () => {
     color: "white",
   };
 
+
   return (
     <header
-      className={`${ menuIsOpen ? "bg-colorPrimary" : "bg-colorTerciary" } flex items-center justify-between px-2 fixed w-full z-50`}
+      className={`${ menuIsOpen ? "bg-colorPrimary" : "bg-colorTerciary" } flex items-center justify-between px-2 fixed w-full z-50 py-2`}
     >
-      {menuIsOpen 
-      ? ( <IoMdClose {...iconProps} onClick={toggleMenu} />) 
-      : ( <TiThMenuOutline {...iconProps} onClick={toggleMenu} />)
-      }
+      <div
+        className="cursor-pointer p-2"
+      >
+        { menuIsOpen 
+        ? ( <IoMdClose {...iconProps} onClick={toggleMenu} />) 
+        : ( <TiThMenuOutline {...iconProps} onClick={toggleMenu} />)
+        }
+      </div>
 
-      {menuIsOpen && <Menu />}
+      <AnimatePresence>
+        {menuIsOpen && (
+            <Menu />
+        )}
+      </AnimatePresence>
 
       <Logo />
 

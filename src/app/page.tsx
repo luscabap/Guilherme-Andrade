@@ -3,6 +3,7 @@ import { AboutMe } from "@/components/AboutMe";
 import { Header } from "@/components/Header";
 import { HomeContent } from "@/components/HomeContent";
 import { useThemeContext } from "@/hooks/useThemeContext";
+import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
   const { themeOperator, toggleTheme } = useThemeContext();
