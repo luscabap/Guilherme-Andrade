@@ -1,27 +1,14 @@
 "use client";
-import { useState } from "react";
-import HomePage from "./pages/homepage";
-import { createContext } from "react"
-
-type ThemeContextProps = {
-  themeOperator: "dark" | "light",
-  toggleTheme: () => void,
-  darkTheme: boolean
-}
-export const ThemeContext = createContext({} as ThemeContextProps);
+import { HomeContent } from "@/components/HomeContent";
+import { useThemeContext } from "@/hooks/useThemeContext";
 
 export default function Home() {
-  const [darkTheme, setTheme] = useState(true);
-
-  const toggleTheme = () => {
-    setTheme(prevValue => !prevValue);
-  }
-
-  const themeOperator = darkTheme ? "dark" : "light"
-
+  const { themeOperator, toggleTheme } = useThemeContext();
   return (
-    <ThemeContext.Provider value={{ themeOperator, toggleTheme, darkTheme }}>
-      <HomePage />
-    </ThemeContext.Provider>
+    <>
+      <div className={`${themeOperator} pt-[140px] text-colorDark`}>
+        <HomeContent />
+      </div>
+    </>
   );
 }
