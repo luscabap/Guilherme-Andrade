@@ -1,5 +1,6 @@
 "use client";
 import { AboutMe } from "@/components/AboutMe";
+import { Contact } from "@/components/Contact";
 import { Header } from "@/components/Header";
 import { HomeContent } from "@/components/HomeContent";
 import { useThemeContext } from "@/hooks/useThemeContext";
@@ -14,6 +15,7 @@ export default function Home() {
         <div className="pt-[140px] px-4">
           <HomeContent />
           <AboutMe />
+          <Contact />
         </div>
       </div>
     </>
