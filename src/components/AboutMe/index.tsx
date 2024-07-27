@@ -4,7 +4,7 @@ import guilhermeHamburgada from "/public/assets/guilherme-hamburgada.png"
 
 export const AboutMe = () => {
   return (
-    <section>
+    <section id="quem-sou-eu">
       <TitleSection texto="Quem sou eu?"/>
       <div className="flex flex-col gap-4 mt-2 justify-center items-center">
         <p className="indent-4 text-justify">Sou Guilherme Menezes de Andrade, tenho 24 anos, sou assessor da Diretoria e serventuário das comissões tematicas na OAB/SP - 44° Subseção de São Vicente e no meu tempo livre sou voluntário na "Hamburgada do Bem", ONG que faz hamburgueres para crianças carentes.</p>

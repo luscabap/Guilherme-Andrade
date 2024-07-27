@@ -9,7 +9,7 @@ const iconProps = {
 
 export const HomeContent = () => {
   return (
-    <div id="homeContent" className="flex flex-col items-center justify-center gap-4 my-4">
+    <div id="home-content" className="flex flex-col items-center justify-center gap-4 my-4">
       <h1 className="text-xl text-center">Olá, sou o <strong>Dr. Guilherme Menezes de Andrade</strong></h1>
       <h2 className="text-lg ">OAB N°: 510.723</h2>
       <div className="flex flex-col items-center justify-center">
