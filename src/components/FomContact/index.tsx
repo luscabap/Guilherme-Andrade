@@ -1,30 +1,10 @@
-import { FormContactSchema } from "@/schemas/FormContactSchema";
-import { FormContactProps } from "@/types/FormContactProps";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { useFormContact } from "@/hooks/useFormContact";
 import { ErrorMessage } from "../ErrorMessage";
-import { z } from "zod";
+import { IoIosSend } from "react-icons/io";
 
 export const FormContact = () => { 
-  const { 
-    register, 
-    handleSubmit, 
-    formState: { errors },
-    reset
-  } = useForm<FormContactProps>({ resolver: zodResolver(FormContactSchema) });
 
-  type FieldEmail = z.infer<typeof FormContactSchema>
-
-  const onSubmit: SubmitHandler<FieldEmail> = (e) => {
-    console.log(e);
-    reset({
-      about: "",
-      email: "",
-      message: "",
-      name: "",
-      number: ""
-    })
-  }
+  const { errors, handleSubmit, onSubmit, register } = useFormContact()
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col justify-center items-center gap-4 text-colorDark">
@@ -85,7 +65,12 @@ export const FormContact = () => {
         </div>
 
       </div>
-      <button type="submit" className="bg-colorPrimary inline-block px-4 py-2 rounded-xl">Enviar mensagem</button>
+      <div className="inline-flex items-center justify-center bg-colorPrimary px-4 py-2 rounded-xl">
+        <button type="submit" className="w-full">
+          Enviar mensagem 
+        </button>
+        <IoIosSend />
+      </div>
     </form>
   )
 }
