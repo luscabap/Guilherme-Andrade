@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useThemeContext } from "@/hooks/useThemeContext";
 import { Link } from "react-scroll";
 import { dataLinks } from "./dataLinks";
+import { SocialMediaLinks } from "../SocialMediaLinks";
 
 export const Menu = () => {
   const { darkTheme } = useThemeContext();
@@ -34,7 +35,7 @@ export const Menu = () => {
       exit="exit"
       className="bg-colorPrimary absolute top-[136px] left-0 w-1/2 h-96 rounded-b-3xl origin-left"
     >
-      <ul className="flex flex-col justify-between p-4 items-start h-full">
+      <ul className="flex flex-col justify-between p-4 items-start w-full gap-10 mb-8">
         { dataLinks.map(item => (
           <li>
             <Link
@@ -52,6 +53,7 @@ export const Menu = () => {
           </li>
         ))}
       </ul>
+      <SocialMediaLinks tamanho="small" cor="white"/>
     </motion.nav>
   );
 };

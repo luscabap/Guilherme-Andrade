@@ -27,12 +27,12 @@ export const HomeContent = () => {
         icon={<MdOutlineEmail {...iconProps} className="text-colorPrimary"/>}
         primario={true}
       />
-      {/* <InfoButton 
+      <InfoButton 
         data="+55 (13) 99144-6831" 
         dataToClipboard="+5513991446831" 
         icon={<MdOutlineWhatsapp {...iconProps} className="text-colorPrimary"/>}
         primario={true}
-      /> */}
+      />
 
     </div>
   )
