@@ -17,21 +17,22 @@ export const HomeContent = () => {
           src={guilherme}
           alt="Foto do Dr. Guilherme Andrade"
           className="rounded-xl w-4/5"
+          priority={true}
         />
         <blockquote className="text-center text-base italic" cite="https://pt.wikipedia.org/wiki/Sobral_Pinto">“A advocacia não é profissão de covardes” <br />- Sobral Pinto</blockquote>
       </div>
-      <InfoButton 
+      <InfoButton
         data="guilherme.oabsv@gmail.com" 
         dataToClipboard="guilherme.oabsv@gmail.com" 
         icon={<MdOutlineEmail {...iconProps} className="text-colorPrimary"/>}
         primario={true}
       />
-      <InfoButton 
+      {/* <InfoButton 
         data="+55 (13) 99144-6831" 
         dataToClipboard="+5513991446831" 
         icon={<MdOutlineWhatsapp {...iconProps} className="text-colorPrimary"/>}
         primario={true}
-      />
+      /> */}
 
     </div>
   )
