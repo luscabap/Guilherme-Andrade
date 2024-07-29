@@ -11,6 +11,7 @@
   --colorLight: #FEFEFE;
   --colorBackground: #4D5159;
   --colorFont: #FEFEFE;
+  --colorBackgroundModal: #000000bf
 }
 
 .light {
@@ -22,6 +23,7 @@
   --colorLight: #FEFEFE;
   --colorBackground: #FEFEFE;
   --colorFont: #0E0E0E;
+  --colorBackgroundModal: #000000bf
 }
 
 @layer utilities {
