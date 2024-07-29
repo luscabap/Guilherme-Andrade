@@ -34,16 +34,16 @@ export const useFormContact = () => {
       celular: data.number
     }
 
-    // emailjs.send(
-    //   "service_l2jjfjs",
-    //   "template_h0zgk77",
-    //   teamplateForm,
-    //   "6fOxpO_wb9HxKJrCM"
-    // )
-    // .then(
-    //   success => console.log("E-mail enviado com sucesso!", success),
-    //   error => console.log("Ooops, aconteceu um erro", error)
-    // )
+    emailjs.send(
+      "service_l2jjfjs",
+      "template_h0zgk77",
+      teamplateForm,
+      "6fOxpO_wb9HxKJrCM"
+    )
+    .then(
+      success => console.log("E-mail enviado com sucesso!", success),
+      error => console.log("Ooops, aconteceu um erro", error)
+    )
     
     setModalSuccessIsOpen(true)
 

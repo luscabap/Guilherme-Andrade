@@ -4,6 +4,7 @@ import { TitleSection } from "../TitleSection";
 import { ModalSuccess } from "../ModalSuccess";
 
 export const Contact = () => {
+
   return (
     <div id="contato" className="flex flex-col gap-4 my-4">
       <TitleSection texto="Contato" />

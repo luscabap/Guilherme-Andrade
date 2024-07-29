@@ -44,7 +44,7 @@ export const Menu = () => {
               smooth={true}
               duration={500}
               offset={-150}
-              className={`text-xl underline ${
+              className={`text-xl underline cursor-pointer ${
                 darkTheme ? "text-colorLight" : "text-colorDark"
               }`}
             >
