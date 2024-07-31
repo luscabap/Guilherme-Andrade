@@ -7,10 +7,12 @@ import { CiPhone } from "react-icons/ci";
 import { BiMessageSquareEdit } from "react-icons/bi";
 import { MdOutlineMessage } from "react-icons/md";
 import { ModalSuccess } from "../ModalSuccess";
+import { useThemeContext } from "@/hooks/useThemeContext";
 
 
 export const FormContact = () => { 
   const { errors, handleSubmit, onSubmit, register, modalSuccessIsOpen } = useFormContact()
+  const { darkTheme } = useThemeContext()
 
   return (  
     <div className="relative">
@@ -26,7 +28,7 @@ export const FormContact = () => {
               placeholder="Nome"
               {...register("name")}
               id="name"
-              className="px-3 py-1 rounded-xl"
+              className={`px-3 py-1 rounded-xl border-colorSecondary border-solid ${darkTheme ? "" : "border-2"} `}
             />
             { errors?.name && <ErrorMessage errorText={errors!.name!.message!}/>}
           </div>
@@ -40,7 +42,7 @@ export const FormContact = () => {
               placeholder="E-mail"
               {...register("email")}
               id="labelEmail"
-              className="px-3 py-1 rounded-xl"
+              className={`px-3 py-1 rounded-xl border-colorSecondary border-solid ${darkTheme ? "" : "border-2"} `}
             />
             { errors?.email && <ErrorMessage errorText={errors!.email!.message!}/>}
           </div>
@@ -54,7 +56,7 @@ export const FormContact = () => {
               placeholder="Número"
               {...register("number")}
               id="labelNumero"
-              className="px-3 py-1 rounded-xl"
+              className={`px-3 py-1 rounded-xl border-colorSecondary border-solid ${darkTheme ? "" : "border-2"} `}
             />
             { errors?.number && <ErrorMessage errorText={errors!.number!.message!}/>}
           </div>
@@ -68,7 +70,7 @@ export const FormContact = () => {
               placeholder="Assunto"
               {...register("about")}
               id="labelAbout"
-              className="px-3 py-1 rounded-xl"
+              className={`px-3 py-1 rounded-xl border-colorSecondary border-solid ${darkTheme ? "" : "border-2"} `}
             />
             { errors?.about && <ErrorMessage errorText={errors!.about!.message!}/>}
           </div>
@@ -82,7 +84,7 @@ export const FormContact = () => {
               placeholder="Mensagem"
               {...register("message")}
               id="labelMessage"
-              className="px-3 py-1 rounded-xl h-40"
+              className={`px-3 py-1 rounded-xl h-40 border-colorSecondary border-solid ${darkTheme ? "" : "border-2"}`}
             />
             { errors?.message && <ErrorMessage errorText={errors!.message!.message!}/>}
           </div>

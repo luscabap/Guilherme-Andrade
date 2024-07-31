@@ -11,7 +11,11 @@ export const HomeContent = () => {
   return (
     <div id="home-content" className="flex flex-col items-center justify-center gap-4 my-4">
       <h1 className="text-xl text-center">Olá, sou o <strong>Dr. Guilherme Menezes de Andrade</strong></h1>
-      <h2 className="text-lg ">OAB N°: 510.723</h2>
+      <div>
+        <h2 className="italic font-light text-center">Pós graduando em direito civil e processo civil</h2>
+        <h2 className="italic font-light text-center">Pós gradudando em direito penal e processo penal</h2>
+      </div>
+      <h3 className="text-lg">OAB N°: <strong>510.723</strong></h3>
       <div className="flex flex-col items-center justify-center">
         <Image 
           src={guilherme}
