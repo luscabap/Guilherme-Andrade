@@ -37,10 +37,9 @@ export const Menu = () => {
     >
       <ul className="flex flex-col justify-between p-4 items-start w-full gap-10 mb-8">
         { dataLinks.map(item => (
-          <li>
+          <li key={item.id}>
             <Link
               to={item.to}
-              key={item.id}
               smooth={true}
               duration={500}
               offset={-150}
