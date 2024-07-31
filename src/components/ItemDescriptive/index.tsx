@@ -12,7 +12,7 @@ export const ItemDescriptive = ({ description, icon, title, primary }: ItemDescr
   const { darkTheme } = useThemeContext()
 
   return (
-    <div className={` ${darkTheme ? "bg-colorLight" : "bg-colorSecondary "} rounded-lg px-8 pt-4 pb-4 min-h-80 flex flex-col items-center justify-start gap-3 shadow-2xl`}>
+    <div className={` ${darkTheme ? "bg-colorLight" : "bg-colorSecondary "} rounded-lg px-8 pt-4 pb-4 min-h-80 flex flex-col items-center justify-start gap-3 shadow-2xl w-full`}>
       <div className={`flex items-center justify-center gap-2 
       ${primary ? "flex-row" : "flex-row-reverse"}`}>
         <h4 className={` ${darkTheme ? "text-colorPrimary" : "text-colorDark"} text-lg underline`}>
@@ -20,7 +20,7 @@ export const ItemDescriptive = ({ description, icon, title, primary }: ItemDescr
         </h4>
         <>{icon}</>
       </div>
-      <p className="text-colorDark indent-4 text-justify">{description}</p>
+      <p className="text-colorDark indent-4">{description}</p>
     </div>
   )
 }
