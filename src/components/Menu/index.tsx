@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useThemeContext } from "@/hooks/useThemeContext";
 import { Link } from "react-scroll";
-import { dataLinks } from "./dataLinks";
 import { SocialMediaLinks } from "../SocialMediaLinks";
+import { dataLinks } from "@/data/dataLinks";
 
 export const Menu = () => {
   const { darkTheme } = useThemeContext();
@@ -53,7 +53,12 @@ export const Menu = () => {
           </li>
         ))}
       </ul>
-      <SocialMediaLinks tamanho="small" cor="white"/>
+      <div className="md:hidden">
+        <SocialMediaLinks tamanho="small" cor="white"/>
+      </div>
+      <div className="hidden md:block">
+        <SocialMediaLinks tamanho="normal" cor="white"/>
+      </div>
     </motion.nav>
   );
 };
