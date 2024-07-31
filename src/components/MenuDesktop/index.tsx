@@ -17,7 +17,7 @@ export const MenuDesktop = () => {
               offset={-150}
               className={`text-xl underline cursor-pointer ${
                 darkTheme ? "text-colorLight" : "text-colorDark"
-              }`}
+              } hover:text-colorContrast p-2 rounded-lg`}
             >
               {item.text}
             </Link>
