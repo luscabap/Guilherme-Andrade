@@ -9,10 +9,9 @@ export const MenuDesktop = () => {
     <nav>
       <ul className="flex gap-8">
       { dataLinks.map(item => (
-          <li>
+          <li key={item.id}>
             <Link
               to={item.to}
-              key={item.id}
               smooth={true}
               duration={500}
               offset={-150}
