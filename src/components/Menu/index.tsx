@@ -33,7 +33,7 @@ export const Menu = () => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="bg-colorPrimary absolute top-[136px] left-0 w-1/2 h-96 rounded-b-3xl origin-left"
+      className="bg-colorPrimary absolute top-[136px] left-0 w-3/4 h-96 rounded-b-3xl origin-left"
     >
       <ul className="flex flex-col justify-between p-4 items-start w-full gap-10 mb-8">
         { dataLinks.map(item => (

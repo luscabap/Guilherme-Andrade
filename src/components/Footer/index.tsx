@@ -6,7 +6,7 @@ export const Footer = () => {
 
   return (
     <footer className="w-full bg-colorDark flex flex-col justify-center items-center py-12 mt-16 gap-4">
-      <p className={`text-center mb-3 text-sm text-colorLight`}>&copy;Todos os direitos reservados - Guilherme Andrade 2024 </p>
+      <p className={`text-center mb-3 text-sm text-colorLight lg:text-xl 2xl:text-2xl`}>&copy;Todos os direitos reservados - Guilherme Andrade 2024 </p>
       <SocialMediaLinks tamanho="normal"/>
       <abbr title="O homem é o arquiteto de seu próprio destino." className="no-underline italic font-light text-colorLight">suae quisque fortuna faber est.</abbr>
       <div className="border-t-[1px] border-solid border-colorLight w-full flex flex-col items-center justify-center gap-6 pt-6">

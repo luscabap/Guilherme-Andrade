@@ -22,7 +22,7 @@ export const FormContact = () => {
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-start gap-2">
               <MdOutlineAccountCircle />
-              <label htmlFor="name" className="text-lg">Digite o seu nome</label>
+              <label htmlFor="name" className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Digite o seu nome</label>
             </div>
             <input 
               placeholder="Nome"
@@ -36,7 +36,7 @@ export const FormContact = () => {
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-start gap-2">
               <MdAlternateEmail />
-              <label htmlFor="labelEmail" className="text-lg">Digite o seu e-mail</label>
+              <label htmlFor="labelEmail" className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Digite o seu e-mail</label>
             </div>
             <input 
               placeholder="E-mail"
@@ -50,7 +50,7 @@ export const FormContact = () => {
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-start gap-2">
               <CiPhone />
-              <label htmlFor="labelNumero" className="text-lg">Digite o seu número de celular</label>
+              <label htmlFor="labelNumero" className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Digite o seu número de celular</label>
             </div>
             <input 
               placeholder="Número"
@@ -64,7 +64,7 @@ export const FormContact = () => {
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-start gap-2">
               <BiMessageSquareEdit />
-              <label htmlFor="labelAbout" className="text-lg">Digite o seu assunto</label>
+              <label htmlFor="labelAbout" className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Digite o seu assunto</label>
             </div>
             <input 
               placeholder="Assunto"
@@ -78,7 +78,7 @@ export const FormContact = () => {
           <div className="flex flex-col gap-2">
             <div className="flex items-center justify-start gap-2">
               <MdOutlineMessage />
-              <label htmlFor="labelMessage" className="text-lg">Digite a sua mensagem</label>
+              <label htmlFor="labelMessage" className="text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Digite a sua mensagem</label>
             </div>
             <input
               placeholder="Mensagem"

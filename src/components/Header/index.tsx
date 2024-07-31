@@ -32,8 +32,8 @@ export const Header = () => {
         className="cursor-pointer p-2 xl:hidden"
       >
         { menuIsOpen 
-        ? ( <IoMdClose {...iconProps} onClick={toggleMenu} />) 
-        : ( <TiThMenuOutline {...iconProps} onClick={toggleMenu} />)
+        ? ( <IoMdClose {...iconProps} onClick={toggleMenu} className="w-6 h-6 md:w-10 md:h-10"/>) 
+        : ( <TiThMenuOutline {...iconProps} onClick={toggleMenu} className="w-6 h-6 md:w-10 md:h-10"/>)
         }
       </div>
 
@@ -49,6 +49,9 @@ export const Header = () => {
         <MenuDesktop />
       </div>
 
+      <div
+        className="cursor-pointer p-2"
+      >
       {darkTheme ? (
         <FaSun
           onClick={toggleTheme}
@@ -62,6 +65,7 @@ export const Header = () => {
           className="cursor-pointer w-6 h-6 md:w-10 md:h-10"
         />
       )}
+      </div>
     </header>
   );
 };
