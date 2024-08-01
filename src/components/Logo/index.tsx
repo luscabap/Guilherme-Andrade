@@ -13,6 +13,7 @@ export const Logo = () => {
       smooth={true} 
       duration={500} 
       offset={-150}
+      className="cursor-pointer"
     >
       <Image
         src={darkTheme ? logoWhite : logoBlack}

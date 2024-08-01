@@ -17,7 +17,7 @@ export const dataItems = [
   {
     id: uuidv4(),
     description: "Oferecemos assessoria completa em diversas áreas do Direito, tanto no âmbito cível quanto no criminal. Nosso trabalho abrange desde a orientação inicial até a defesa e representação em juízo.",
-    title: "Atuação em Processos Cíveis e Criminais",
+    title: "Processos Cíveis e Criminais",
     icon: FaBook,
     primary: false
   },

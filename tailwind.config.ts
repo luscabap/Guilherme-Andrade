@@ -23,6 +23,8 @@ const config: Config = {
         "colorBackground": "var(--colorBackground)",
         "colorFont": "var(--colorFont)",
         "colorBackgroundModal": "var(--colorBackgroundModal)",
+        "colorHover": "var(--colorHover)",
+        "colorHoverContrast": "var(--colorHoverContrast)"
       }
     },
   },

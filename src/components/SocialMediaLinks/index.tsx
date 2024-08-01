@@ -41,13 +41,13 @@ export const SocialMediaLinks = ({ tamanho, cor = "#082f63" }: SocialMediaLinks)
 
   return (
     <div className="flex gap-8 items-center justify-center w-full">
-      <a href="https://wa.me/5513991446831" target="_blank">
+      <a href="https://wa.me/5513991446831" target="_blank" className="bg-transparent hover:bg-colorHover rounded-xl">
         <FaWhatsapp {...iconProps} />
       </a>
-      <a href="https://www.instagram.com/gui.andrade_adv/" target="_blank">
+      <a href="https://www.instagram.com/gui.andrade_adv/" target="_blank" className="bg-transparent hover:bg-colorHover rounded-xl">
         <FaInstagram {...iconProps} />
       </a>
-      <a href="https://www.linkedin.com/in/guilherme-andrade-bb6b3328a/" target="_blank">
+      <a href="https://www.linkedin.com/in/guilherme-andrade-bb6b3328a/" target="_blank" className="bg-transparent hover:bg-colorHover rounded-xl">
         <IoLogoLinkedin {...iconProps} />
       </a>
     </div>

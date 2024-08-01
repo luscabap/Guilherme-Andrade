@@ -26,15 +26,17 @@ export default function Home() {
 
   return (
     <>
-      <div className={`${themeOperator} text-colorFont bg-colorBackground md:text-xl lg:text-2xl 2xl:text-2xl`}>
-        <div className="rounded-full bg-colorPrimary bottom-2 right-2 p-2 fixed z-50">
-            {modalWPIsOpen ? <IoMdClose className="w-14 h-14" onClick={toggleModalWP}/> : <FaWhatsapp className="w-14 h-14" onClick={toggleModalWP}/>}
+      <div className={`${themeOperator} text-colorFont bg-colorBackground md:text-xl`}>
+        <div className="rounded-full bg-colorContrast bottom-2 right-2 p-2 fixed z-50 cursor-pointer hover:bg-colorHoverContrast">
+            {modalWPIsOpen 
+            ? <IoMdClose className="w-14 h-14" onClick={toggleModalWP} /> 
+            : <FaWhatsapp className="w-14 h-14" onClick={toggleModalWP} />}
         </div>
         <AnimatePresence>
           {modalWPIsOpen && <ModalWhatsapp />}
         </AnimatePresence>
         <Header />
-        <div className="pt-[160px] flex flex-col gap-12 px-4 lg:px-12 2xl:px-32">
+        <div className="pt-[160px] flex flex-col gap-12 px-4 lg:px-12 2xl:px-52">
           <Introduction />
           <HomeContent />
           <AboutMe />
