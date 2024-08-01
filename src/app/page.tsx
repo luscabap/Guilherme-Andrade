@@ -12,7 +12,6 @@ import { AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import { motion } from "framer-motion"
 
 export default function Home() {
   const { themeOperator, toggleTheme } = useThemeContext();
@@ -26,7 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <div className={`${themeOperator} text-colorFont bg-colorBackground md:text-xl`}>
+      <div className={`${themeOperator} text-colorFont bg-colorBackground md:text-xl max-w-full overflow-hidden`}>
         <div className="rounded-full bg-colorContrast bottom-2 right-2 p-2 fixed z-50 cursor-pointer hover:bg-colorHoverContrast">
             {modalWPIsOpen 
             ? <IoMdClose className="w-14 h-14" onClick={toggleModalWP} /> 
