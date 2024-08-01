@@ -27,9 +27,9 @@ O site foi desenvolvido com uma arquitetura altamente componentizada para maximi
 
 _MOBILE_
 
-![GK1](https://github.com/luscabap/Guilherme-Andrade/blob/main/public/mobile_01.png)
-![GK1](https://github.com/luscabap/Guilherme-Andrade/blob/main/public/mobile_02.png)
-![GK1](https://github.com/luscabap/Guilherme-Andrade/blob/main/public/mobile_03.png)
+- ![GK1](https://github.com/luscabap/Guilherme-Andrade/blob/main/public/mobile_01.png)
+- ![GK1](https://github.com/luscabap/Guilherme-Andrade/blob/main/public/mobile_02.png)
+- ![GK1](https://github.com/luscabap/Guilherme-Andrade/blob/main/public/mobile_03.png)
 
 _TABLET_
 
