@@ -25,7 +25,14 @@ export const AboutMe = () => {
           Subseção de São Vicente e no meu tempo livre sou voluntário na
           "Hamburgada do Bem", ONG que faz hamburgueres para crianças carentes.
         </motion.p>
-        <div className=" flex justify-evenly">
+        <motion.div
+          className=" flex justify-evenly"
+          initial={{ opacity: 0.3, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.3,
+          }}
+        >
           <Image
             alt="Foto do Guilherme Andrade na ONG Hamburgada do Bem"
             src={guilhermeHamburgada}
@@ -36,7 +43,7 @@ export const AboutMe = () => {
             src={guilhermeHamburgada2}
             className="w-1/2 rounded-md xl:w-1/3 hidden xl:block"
           />
-        </div>
+        </motion.div>
         <motion.p
           className={baseStylesP}
           {...baseAnimationP}
