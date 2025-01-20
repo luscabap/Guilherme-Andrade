@@ -4,19 +4,22 @@ import { TitleSection } from "../TitleSection";
 import guilhermeHamburgada from "/public/assets/guilherme-hamburgada.png";
 import guilhermeHamburgada2 from "/public/assets/guilherme-hamburgada2.png";
 
+const baseStylesP = "indent-4 text-justify xl:indent-5";
+
+const baseAnimationP = {
+  initial: { opacity: 0, scale: 0.8 },
+  whileInView: { opacity: 1, scale: 1 },
+  transition: {
+    duration: 0.3,
+  },
+};
+
 export const AboutMe = () => {
   return (
     <section id="quem-sou-eu" className="">
       <TitleSection texto="Quem sou eu?" />
       <div className="flex flex-col gap-4 mt-2 justify-center items-center xl:w-3/4 xl:mx-auto">
-        <motion.p
-          className="indent-4 text-justify xl:indent-5"
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.3,
-          }}
-        >
+        <motion.p className={baseStylesP} {...baseAnimationP}>
           Sou Guilherme Menezes de Andrade, tenho 24 anos, sou assessor da
           Diretoria e serventuário das comissões tematicas na OAB/SP - 44°
           Subseção de São Vicente e no meu tempo livre sou voluntário na
@@ -35,12 +38,9 @@ export const AboutMe = () => {
           />
         </div>
         <motion.p
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.4,
-          }}
-          className="indent-4 text-justify xl:indent-5"
+          className={baseStylesP}
+          {...baseAnimationP}
+          transition={{ ...baseAnimationP.transition, duration: 0.4 }}
         >
           Nascido em São Vicente, a 1ª cidade do Brasil, filho único de pais
           nordestinos, sempre estudei em escola pública. Comecei a trabalhar aos
@@ -48,12 +48,9 @@ export const AboutMe = () => {
           2017 ingressei como jovem aprendiz na OAB de São Vicente, com 16 anos.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.5,
-          }}
-          className="indent-4 text-justify xl:indent-5"
+          className={baseStylesP}
+          {...baseAnimationP}
+          transition={{ ...baseAnimationP.transition, duration: 0.5 }}
         >
           Desde adolescente, sempre quis ser advogado para aprender a lidar com
           as injustiças e me posicionar em debates jurídicos. No começo, pensei
@@ -62,12 +59,9 @@ export const AboutMe = () => {
           um mundo sem fronteiras, onde há espaço para todos.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.6,
-          }}
-          className="indent-4 text-justify xl:indent-5"
+          className={baseStylesP}
+          {...baseAnimationP}
+          transition={{ ...baseAnimationP.transition, duration: 0.6 }}
         >
           Em 2019, ingressei na faculdade de Direito da ESAMC Santos e
           concluindo em 2023. No mesmo ano, em novembro, aprovado na 1ª fase do
@@ -75,12 +69,9 @@ export const AboutMe = () => {
           da OAB.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.7,
-          }}
-          className="indent-4 text-justify xl:indent-5"
+          className={baseStylesP}
+          {...baseAnimationP}
+          transition={{ ...baseAnimationP.transition, duration: 0.7 }}
         >
           Destaca-se aquele que consegue desenvolver um trabalho de excelência e
           está sempre atualizado com as questões atuais, sendo esse o
